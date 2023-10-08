@@ -6,7 +6,7 @@
 /*   By: psotto-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 22:36:59 by psotto-m          #+#    #+#             */
-/*   Updated: 2022/12/06 22:37:01 by psotto-m         ###   ########.fr       */
+/*   Updated: 2023/10/08 16:04:39 by psotto-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ int	ft_printf(const char *str, ...)
 		}
 		else
 			result += write(1, &str[i], 1);
-	i++;
+		i++;
 	}
 	va_end(args);
 	return (result);
